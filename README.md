@@ -15,6 +15,11 @@
 - [License](#license)  
 - [Contact](#contact)
 
+## ScreenShots
+![Server Side](images/Screenshot%202025-02-22%20121332.jpg)
+![Client Side](images/Screenshot%202025-02-22%20121421.jpg)
+
+
 ## Overview
 
 > This application is designed to manage and analyze real-time calls using **FastAPI**, **PyTorch**, and **Windows Speech Recognizer**. It offers an intuitive frontend built with **HTML**, **CSS**, and **JavaScript** that leverages **WebSockets** and **WebRTC** for live communication. The system can handle speech recognition, real-time call transcription, and Fraud Detection seamlessly.
@@ -80,7 +85,7 @@ Due to policy or legal restrictions, **actual call recording** is not implemente
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/YourUsername/YourProjectName.git
+   git clone https://github.com/SuryaSekharSingh/Fintech-A-Thon.git
    cd YourProjectName
    ```
 
@@ -89,7 +94,7 @@ Due to policy or legal restrictions, **actual call recording** is not implemente
      ```bash
      cd backend
      ```
-   - Create and activate a virtual environment (optional but recommended):  
+   - Create and activate a virtual environment (optional):  
      ```bash
      python -m venv venv
      source venv/bin/activate  # On Windows: venv\Scripts\activate
