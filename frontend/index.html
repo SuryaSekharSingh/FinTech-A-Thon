@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Voice Call</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body >
+    <div class="bg-gray-900 h-screen text-white flex items-center justify-center py-6">
+
+        <div class="w-[1200px] h-full bg-gray-800 rounded-lg">
+    
+            <div class="container mx-auto p-4">
+                <h1 class="text-4xl font-bold text-center text-blue-400 mb-8">Shadow Voice Call</h1>
+                
+                <div class="call-status text-center text-lg mb-4" id="callStatus">
+                    Ready to connect
+                </div>
+        
+                <div class="audio-container flex justify-center space-x-4 mb-8">
+                    <audio id="localAudio" autoplay playsinline muted></audio>
+                    <audio id="remoteAudio" autoplay playsinline></audio>
+                </div>
+        
+                <div class="controls flex justify-center space-x-4 mb-8">
+                    <button id="startCall" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                        📞 Start Call
+                    </button>
+                    <button id="endCall" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                        ❌ End Call
+                    </button>
+                </div>
+        
+                <div class="transcript-box bg-gray-800 p-4 rounded-lg">
+                    <div class="transcript text-gray-200" id="transcript">
+                        <!-- Transcript will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { startCall } from './rtc.js';
+        document.getElementById("startCall").addEventListener("click", startCall);
+        document.getElementById("endCall").addEventListener("click", () => location.reload());
+    </script>
+</body>
+</html>

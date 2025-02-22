@@ -1,0 +1,113 @@
+:root {
+    --primary: #6366f1;
+    --danger: #ef4444;
+    --background: #0f172a;
+    --glass: rgba(255, 255, 255, 0.05);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--background);
+    color: white;
+    font-family: 'Segoe UI', system-ui;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .container {
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 95%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .call-status {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  #startCall {
+    background: var(--primary);
+    color: white;
+  }
+  
+  #endCall {
+    background: var(--danger);
+    color: white;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .transcript-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .transcript {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+  }
