@@ -19,6 +19,12 @@
 
 > This application is designed to manage and analyze real-time calls using **FastAPI**, **PyTorch**, and **Windows Speech Recognizer**. It offers an intuitive frontend built with **HTML**, **CSS**, and **JavaScript** that leverages **WebSockets** and **WebRTC** for live communication. The system can handle speech recognition, real-time call transcription, and Fraud Detection seamlessly.
 
+## Important Note on Call Simulation
+
+Due to policy or legal restrictions, **actual call recording** is not implemented in this project. Instead, we **simulate calls** using sockets for demonstration purposes. This allows us to showcase our **Fraud Detection System** without violating any regulations regarding call recording.
+
+> **Integration Possibility:** Authorized entities (such as telecom providers or law enforcement agencies) could adapt and integrate this solution into their systems, provided they comply with all relevant legal and policy requirements.
+
 ## Features
 - **Real-Time Call Handling:** Supports incoming/outgoing calls with minimal latency.  
 - **Speech Recognition:** Leverages **Windows Speech Recognizer** for accurate transcription.  
