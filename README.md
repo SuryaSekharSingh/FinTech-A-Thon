@@ -144,13 +144,10 @@ Contributions are welcome! If you’d like to contribute, please follow these st
 3. Make your changes and commit them: `git commit -m 'Add some feature'`.  
 4. Push to the branch: `git push origin feature/your-feature-name`.  
 5. Submit a pull request.
-
-## License
-This project is licensed under the [MIT License](LICENSE) – feel free to modify it to fit your needs.
+   
 
 ## Contact
-Created by [ TEAM SHADOW ](https://github.com/SuryaSekharSingh) – feel free to contact me!  
-For any inquiries, please open an issue or reach out via email at `shadow@nitt.edu`.
+Created by [ TEAM SHADOW ](https://github.com/SuryaSekharSingh) – feel free to contact us!  
 
 ---
 
