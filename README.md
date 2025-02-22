@@ -19,6 +19,10 @@
 
 > This application is designed to manage and analyze real-time calls using **FastAPI**, **PyTorch**, and **Windows Speech Recognizer**. It offers an intuitive frontend built with **HTML**, **CSS**, and **JavaScript** that leverages **WebSockets** and **WebRTC** for live communication. The system can handle speech recognition, real-time call transcription, and Fraud Detection seamlessly.
 
+## Limitation of Twilio
+
+Due to inherent limitations and compliance policies, Twilio does not support direct recording of user calls. As a result, this project simulates call data using WebSockets to demonstrate real-time fraud detection and transcription features.
+
 ## Important Note on Call Simulation
 
 Due to policy or legal restrictions, **actual call recording** is not implemented in this project. Instead, we **simulate calls** using sockets for demonstration purposes. This allows us to showcase our **Fraud Detection System** without violating any regulations regarding call recording.
@@ -106,15 +110,19 @@ Due to policy or legal restrictions, **actual call recording** is not implemente
    ```bash
    uvicorn server:app --host 0.0.0.0 --port 5060
    ```
-   or (depending on your server file):
+   AND the backend:
    ```bash
    python server.py
    ```
    The server should start on `http://localhost:5060` by default.
 
 2. **Open the Frontend**  
-   - Serve the `frontend` folder using any HTTP server or open `index.html` directly in your browser.  
-   - Ensure your JavaScript (`app.js`) is pointing to the correct WebSocket endpoint, e.g., `ws://localhost:8000/ws`.
+     From the `frontend` directory, run:
+      ```bash
+      python -m http.server {port}
+      ```
+      - To run this on your local network you have to change the ip in server.py and app.js.
+
 
 3. **Initiate a Call**  
    - Once the server is running, open the frontend in your browser.  
